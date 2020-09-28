@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Usos de Api's (PAM)</title>
+    <script src="api.js"></script>
+  </head>
+  <body class="bg-dark">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center text-light">
+          <h1 class="font-weight-bold border-bottom border-primary mt-3">
+            Link Preview
+          </h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-10 offset-1 mt-3">
+          <form class="form">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nome do Site"
+                id="name"
+              />
+              <div class="input-group-append">
+                <button type="button" class="btn btn-outline-primary" onclick="showLinkPreview()">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="cont" id="cont" style="color: white;">
+
+      </div>
+    </div>
+  </body>
+</html>
